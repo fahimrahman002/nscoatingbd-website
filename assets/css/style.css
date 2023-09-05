@@ -590,7 +590,7 @@ body {
 
 .section {
   padding-top: 110px;
-  padding-bottom: 90px;
+  /* padding-bottom: 90px; */
 }
 .section.white {
   background: #fff;
@@ -1581,7 +1581,7 @@ pages
 */
 .page .cover {
   margin-top: 100px;
-  min-height: 400px;
+  min-height: 185px;
   position: relative;
   display: flex;
   align-items: center;
