@@ -587,7 +587,7 @@
             <div class="person-item active">
               <div class="img">
                 <img
-                  src="assets/images/photos/team/team-member-fahim.jpg"
+                  src="assets/images/photos/team/team-member-fahim.png"
                   class="team-member-img"
                   alt=""
                 />
@@ -595,8 +595,9 @@
               <div class="content">
                 <div class="text">
                   <h5 class="user-name">Md. Fahim Rahman</h5>
-                  <span
-                    >Junior Executive<br />(Technical Sales & Marketing)</span
+                  <span>
+                    CSE Engineer (AUST) <br/>
+                    Junior Executive<br />(Technical Sales & Marketing)</span
                   >
                   <ul class="social">
                     <li>
@@ -629,7 +630,7 @@
               <div class="content">
                 <div class="text">
                   <h5 class="user-name">Muhammad Muhib Mia</h5>
-                  <span>Junior Executive<br />(Marketing & Sales)</span>
+                  <span>IPE Engineer(BUET) <br/>Junior Executive<br />(Marketing & Sales)</span>
                   <ul class="social">
                     <li>
                       <a href="javascript:void(0)"
@@ -907,8 +908,6 @@
 
     <script>
       function handleSubmitEmail() {
-        console.log("hi");
-
         var link =
           "salessupport@glorycoatingsbd.com" +
           "?subject=" +
@@ -920,14 +919,16 @@
 
       function generateEmail() {
         var emailTo = "salessupport@glorycoatingsbd.com";
-		var emailSenderName = $("#emailSenderName").val();
+        var emailSenderName = $("#emailSenderName").val();
         var emailSubject = $("#emailSubject").val();
-        var emailBody =$("#emailBody").val();
+        var emailBody = $("#emailBody").val();
         location.href =
           "mailto:" +
           emailTo +
           "?" +
-          (emailSubject ? "&subject=" + emailSubject+`(Name:${emailSenderName})` : "") +
+          (emailSubject
+            ? "&subject=" + emailSubject + `(Name:${emailSenderName})`
+            : "") +
           (emailBody ? "&body=" + emailBody : "");
       }
     </script>
